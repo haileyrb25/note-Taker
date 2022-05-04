@@ -9,6 +9,7 @@
 
 # Overview
 
+The goal for this challenge was to edit a starter code to create an app where a user could take notes. This is done by connecting the front end code that was given and sending it to the server in order for the information to go through routes. This challenge serves as a basic spectrum for understanding Express.js!
 
 ---
 
