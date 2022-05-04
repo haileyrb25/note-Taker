@@ -7,7 +7,9 @@ const app = express();
 const PORT =process.env.PORT || 3001;
 
 //todo set up same body parsing, static, and route the middleware
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 //start the server on the port
 app.listen(PORT, () => console.log('This port is listening at ${PORT}'));
