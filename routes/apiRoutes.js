@@ -20,6 +20,20 @@ router.post("/notes", ({body}, res)=>{
         text,
         id: uuidv4()
     }
+    fs.readFile(path.join(__dirname, "../db/db.json"), 'utf-8', (err, data)=>{
+        console.log("data from db.json", data)
+        const parsedNotes = JSON.parse(data)
+        // console.log("parsed data", parsedNotes)
+        parsedNotes.push(newNote)
+        console.log("parsed notes with new note", parsedNotes)
+
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(parsedNotes), (err)=>{
+            if(err) throw err;
+            console.log("note has been saved to db!")
+        })
+    })
+    res.sendFile(path.join(__dirname, "../db/db.json"));
+
 });
 
 
