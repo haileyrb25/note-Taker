@@ -15,7 +15,9 @@ The goal for this challenge was to edit a starter code to create an app where a 
 
 # Picture
 
-
+![Seeing Notes](./assets/screenshot1.jpg)
+![Adding Note](./assets/screenshot2.jpg)
+![Deleting Note](./assets/screnshot3.jpg)
 
 ---
 
