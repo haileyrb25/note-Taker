@@ -1,9 +1,26 @@
-//todo require the router and db items needed
+//require the router and db items needed
+const router = require("express").Router()
+const path = require("path");
+const fs = require("fs");
+const { v4: uuidv4 } = require('uuid');
 
-//todo set up a get/post/delete methods as responsees to the database
 
-// export the router
+router.get("/notes", (req, res)=>{
+    res.sendFile(path.join(__dirname, "../db/db.json"));
+})
+
+router.post("/notes", ({body}, res)=>{
+
+    console.log("Info from frontend", body)
+
+    const { title, text} = body;
+
+    const newNote = {
+        title,
+        text,
+        id: uuidv4()
+    }
+});
 
 
-//need on top- express.router and reference to database store because that has some of the functionality
-//look at mini project
+module.exports = router;

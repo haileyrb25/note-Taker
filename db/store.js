@@ -1,4 +1,3 @@
-//todo require the util and fs needed
 //util is a built in feature of node like fs
 const util = require('util');
 const fs = require('fs');
