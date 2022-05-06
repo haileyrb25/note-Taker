@@ -3,6 +3,7 @@
 # Table of Contents
 - [Overview](#Overview)
 - [Picture](#Picture)
+- [Mock-Video](#Mock-Video)
 - [Criteria](#Criteria)
 
 ---
@@ -21,12 +22,12 @@ The goal for this challenge was to edit a starter code to create an app where a 
 
 ---
 
-# Mock Video
+# Mock-Video
 
 ![Gif](./assets/note%20taker.gif)
 
 The live link to the video can be found here:
-![Link](https://drive.google.com/file/d/1WeIeQYQ-tSDtk4Mns5iqT6FL0lMJEXot/view)
+[Link](https://drive.google.com/file/d/1WeIeQYQ-tSDtk4Mns5iqT6FL0lMJEXot/view)
 
 (Downloading the video increases the video quality)
 
