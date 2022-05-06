@@ -4,11 +4,8 @@ const fs = require('fs');
 
 const uuidv1 = require('uuid/v1');
 
-//writeToFile
-//readToFile
 
 
-//todo require the uuid/v1 package in yur package json
 class Store {
     read() {
 
@@ -16,9 +13,7 @@ class Store {
     write() {
 
     }
-    // get the notes
-    //add some notes
-    //delete note EXTRA CREDIT
+   
 }
 
 modules.exports = new Store();

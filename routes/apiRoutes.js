@@ -34,7 +34,28 @@ router.post("/notes", ({body}, res)=>{
     })
     res.sendFile(path.join(__dirname, "../db/db.json"));
 
-});
+})
+
+router.delete("/notes/:id", (req, res)=>{
+ 
+
+    fs.readFile(path.join(__dirname, "../db/db.json"), "utf-8", (err, data)=>{
+
+        const parsedNotes = JSON.parse(data);
+
+        for(let i = 0; i < parsedNotes.length; i++){
+            if(parsedNotes[i].id === req.params.id){
+                parsedNotes.splice(i, 1)
+            }
+        }
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(parsedNotes), (err)=>{
+            if(err) throw err;
+            console.log("note has been deleted from db!")
+        })
+        res.sendFile(path.join(__dirname, "../db/db.json"));
+    })
+
+})
 
 
 module.exports = router;
