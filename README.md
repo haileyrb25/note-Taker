@@ -10,7 +10,9 @@
 
 # Overview
 
-The goal for this challenge was to edit a starter code to create an app where a user could take notes. This is done by connecting the front end code that was given and sending it to the server in order for the information to go through routes. This challenge serves as a basic spectrum for understanding Express.js!
+The goal for this challenge was to edit a starter code to create an app where a user could take notes. This is done by connecting the front end code that was given and sending it to the server in order for the information to go through routes. This challenge serves as a basic spectrum for understanding Express.js! By using routes and calling to the api, the app is able to function on the front end as well as the back end. Another great new part about this challenge was that this assignment was deployed on Heroku. Down below, you can see a couple screenshots to show that the note was added to the side as well as the video. Please keep in mind when you click on the link for the video, the quality isn't great until the video is downloaded!
+
+As a bonus, the delete function was included for this application.
 
 ---
 
